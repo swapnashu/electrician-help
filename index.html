@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Electrician help — Satya Electricals</title>
+<meta name="description" content="Electrician help by Satya Electricals: a free, offline-first Android toolbox for electricians, plumbers, solar and battery work. Spirit level, wire sizing, solar sizing, unit conversion and more.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FFFFFF'/%3E%3Cpath d='M36 8 L18 36 H30 L26 56 L46 26 H33 Z' fill='%23F5A623'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --blue:#1D6BF3; --blue-deep:#12409B; --blue-soft:#EAF1FE; --blue-line:#C9DCFB;
+    --gold:#F5A623; --gold-deep:#B87400;
+    --ink:#16233A; --muted:#5D6D86; --line:#E0E9F7; --bg:#F4F8FE; --card:#FFFFFF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",sans-serif;
+    background:var(--bg); color:var(--ink); line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:940px;margin:0 auto;padding:0 20px}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  header{background:linear-gradient(160deg,#FFFFFF 0%,#EAF1FE 100%);border-bottom:1px solid var(--line);padding:22px 0}
+  .bar{display:flex;align-items:center;gap:14px}
+  .logo{width:46px;height:46px;border-radius:13px;background:#fff;border:1px solid var(--line);
+        display:grid;place-items:center;box-shadow:0 4px 14px rgba(29,107,243,.10);flex:none}
+  .logo svg{width:26px;height:26px}
+  .brand b{display:block;font-size:19px;letter-spacing:-.2px}
+  .brand span{display:block;font-size:13px;font-weight:700;color:var(--gold-deep);letter-spacing:.2px}
+
+  .hero{text-align:center;padding:54px 0 34px}
+  .hero h1{font-size:clamp(30px,5.4vw,46px);line-height:1.15;letter-spacing:-1px}
+  .hero h1 em{font-style:normal;color:var(--blue)}
+  .hero p{font-size:17px;color:var(--muted);max-width:620px;margin:16px auto 0}
+
+  .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:14px;
+       font-weight:800;font-size:16px;border:1px solid transparent;transition:.16s;text-decoration:none}
+  .btn-p{background:var(--blue);color:#fff;box-shadow:0 8px 22px rgba(29,107,243,.28)}
+  .btn-p:hover{background:var(--blue-deep);text-decoration:none;transform:translateY(-1px)}
+  .btn-s{background:#fff;color:var(--ink);border-color:var(--line)}
+  .btn-s:hover{border-color:var(--blue-line);text-decoration:none}
+  .meta{margin-top:16px;font-size:13.5px;color:var(--muted)}
+  .meta b{color:var(--ink)}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:16px;margin:14px 0 8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;
+        box-shadow:0 3px 14px rgba(22,35,58,.05)}
+  .card h3{font-size:16.5px;margin-bottom:6px;display:flex;align-items:center;gap:9px}
+  .card p{font-size:14.5px;color:var(--muted)}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--blue);flex:none}
+  .dot.g{background:var(--gold)}
+
+  section{padding:34px 0}
+  h2{font-size:25px;letter-spacing:-.5px;margin-bottom:6px}
+  .sub{color:var(--muted);font-size:15px;margin-bottom:20px}
+
+  .list{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+  .row{display:flex;gap:14px;padding:15px 20px;border-bottom:1px solid var(--line);align-items:flex-start}
+  .row:last-child{border-bottom:0}
+  .row b{display:block;font-size:15px}
+  .row span{font-size:14px;color:var(--muted)}
+  .tick{color:var(--blue);font-weight:900;flex:none;line-height:1.5}
+
+  .strip{background:linear-gradient(150deg,var(--blue) 0%,var(--blue-deep) 100%);
+         color:#fff;border-radius:22px;padding:34px;text-align:center}
+  .strip h2{color:#fff}
+  .strip p{color:#D6E4FE;font-size:15.5px;max-width:600px;margin:8px auto 0}
+  .strip .btn-p{background:#fff;color:var(--blue-deep);box-shadow:0 8px 22px rgba(0,0,0,.18);margin-top:20px}
+
+  footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:14px;color:var(--muted)}
+  .fl{display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between;align-items:center}
+  .fl a{font-weight:600}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <div class="logo">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M36 8 L18 36 H30 L26 56 L46 26 H33 Z" fill="#F5A623"/></svg>
+    </div>
+    <div class="brand">
+      <b>Electrician help</b>
+      <span>Satya Electricals</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <h1>Every field tool an <em>electrician</em> needs, in one app.</h1>
+    <p>Free, offline-first Android toolbox for electricians, plumbers, solar and battery work.
+       Built in Odisha, tuned for Indian wiring, panels and sunlight.</p>
+
+    <div class="btns">
+      <a class="btn btn-p" href="https://github.com/swapnashu/electrician-help/releases/latest"
+         id="dl">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg>
+        Download APK
+      </a>
+      <a class="btn btn-s" href="privacy.html">Privacy policy</a>
+    </div>
+    <p class="meta">Version <b id="ver">1.1.0</b> &middot; Android 7.0+ &middot; ~4.6 MB &middot; No ads, no tracking</p>
+  </div>
+
+  <div class="wrap">
+    <div class="grid">
+      <div class="card"><h3><span class="dot"></span>Spirit level</h3>
+        <p>Real sensor physics with a graduated vial, plumb, 45&deg; and bullseye modes, zero-offset, beep-on-level and a full-screen landscape view.</p></div>
+      <div class="card"><h3><span class="dot"></span>Wire &amp; cable</h3>
+        <p>Ampacity, voltage drop and recommended size for copper and aluminium, plus SWG / AWG / BWG gauge data and flexible-wire sizing.</p></div>
+      <div class="card"><h3><span class="dot"></span>Solar sizing</h3>
+        <p>Array, inverter and battery bank sizing with panel tilt, plus live sunrise, sunset and weather for 36 Odisha cities and the rest of India.</p></div>
+      <div class="card"><h3><span class="dot g"></span>Battery &amp; BMS</h3>
+        <p>Series / parallel pack building for NMC, LFP, lead-acid and LTO with capacity, energy and BMS current.</p></div>
+      <div class="card"><h3><span class="dot g"></span>Measurement</h3>
+        <p>Nine unit categories including temperature, pressure, flow, power and energy, with wire-gauge tables.</p></div>
+      <div class="card"><h3><span class="dot g"></span>Components</h3>
+        <p>Resistor colour code and SMD decoder, capacitor &times;/series, LED and zener resistor calculators.</p></div>
+      <div class="card"><h3><span class="dot"></span>Plumbing</h3>
+        <p>Tank capacity, pump and pipe sizing, plus a water-flow and drainage helper.</p></div>
+      <div class="card"><h3><span class="dot"></span>Electrical</h3>
+        <p>Ohm&rsquo;s law, single and three-phase power, MCB sizing, motor starters and earthing pits.</p></div>
+    </div>
+  </div>
+
+  <section class="wrap">
+    <h2>Built for the field</h2>
+    <p class="sub">No sign-in, no account, no ads &mdash; it works the moment you open it.</p>
+    <div class="list">
+      <div class="row"><span class="tick">&#10003;</span><div><b>Works without a signal</b><span>Every calculator runs on the device. Nothing needs a network connection to work.</span></div></div>
+      <div class="row"><span class="tick">&#10003;</span><div><b>Three languages</b><span>English, &#2361;&#2367;&#2344;&#2381;&#2342;&#2368; (Hindi) and &#2860;&#2827;&#2354;&#2366;&#2340;&#2381;&#2361; (Odia) &mdash; switch any time from the menu.</span></div></div>
+      <div class="row"><span class="tick">&#10003;</span><div><b>Light on your phone</b><span>About 4.6 MB, native Android with no embedded browser engine.</span></div></div>
+      <div class="row"><span class="tick">&#10003;</span><div><b>Free updates</b><span>The app checks for a new version on launch and offers a one-tap install.</span></div></div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="strip">
+      <h2>Need help or want to report something?</h2>
+      <p>Join the WhatsApp group to ask questions and share job photos, or follow the channel for offers and updates.</p>
+      <a class="btn btn-p" href="https://chat.whatsapp.com/Hd3aeA7FDq2LSfqv5ON5Z6?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4">Join the WhatsApp group</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap fl">
+    <div>&copy; 2026 Satya Electricals &middot; <a href="https://satyaelectricals.in/">satyaelectricals.in</a></div>
+    <div>
+      <a href="privacy.html">Privacy</a> &middot;
+      <a href="https://github.com/swapnashu/electrician-help/releases">Releases</a> &middot;
+      <a href="https://github.com/swapnashu/electrician-help-source">Source</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Show the real latest version + point the button straight at it.
+  fetch("https://api.github.com/repos/swapnashu/electrician-help/releases/latest")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if (!d || !d.tag_name) return;
+      document.getElementById("ver").textContent = d.tag_name.replace(/^v/, "");
+      var a = d.assets && d.assets[0];
+      if (a && a.browser_download_url) document.getElementById("dl").href = a.browser_download_url;
+    })
+    .catch(function(){});
+</script>
+</body>
+</html>
